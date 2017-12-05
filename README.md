@@ -85,8 +85,8 @@ PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
 ```
 - Scikit-image and scikit-learn pacakges:
 ```
-sudo pip install scikit-image
-sudo pip install scikit-learn
+sudo pip3 install scikit-image
+sudo pip3 install scikit-learn
 ```
 - OpenCV
 ```
@@ -98,7 +98,7 @@ sudo apt-get install python-qt4
 ```
 - QDarkStyle
 ```
-sudo pip install qdarkstyle
+sudo pip3 install qdarkstyle
 ```
 
 For Conda users, type the following command lines:
