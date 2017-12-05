@@ -59,7 +59,7 @@ class ColorizeImageBase():
     # ***** Image prepping *****
     def load_image(self, input_path):
         # rgb image [CxXdxXd]
-        im = cv2.cvtColor(cv2.imread(input_path, 1), cv2.COLOR_BGR2RGB)
+        im = cv2.cvtColor(cv2.imread(input_path.decode("utf-8"), 1), cv2.COLOR_BGR2RGB)
         self.img_rgb_fullres = im.copy()
         self._set_img_lab_fullres_()
 

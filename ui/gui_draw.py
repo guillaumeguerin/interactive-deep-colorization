@@ -76,7 +76,7 @@ class GUIDraw(QWidget):
         self.image_loaded = True
         self.image_file = image_file
         print(image_file)
-        im_bgr = cv2.imread(image_file)
+        im_bgr = cv2.imread(image_file.decode("utf-8"))
         self.im_full = im_bgr.copy()
         # get image for display
         h, w, c = self.im_full.shape
